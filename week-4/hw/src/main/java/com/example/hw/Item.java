@@ -1,3 +1,5 @@
+package com.example.hw;
+
 /**
  * Represents an item with a name and price.
  * This class does not implement any interfaces or inherit from other classes.

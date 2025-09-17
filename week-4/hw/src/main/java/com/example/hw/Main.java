@@ -1,4 +1,9 @@
+package com.example.hw;
+
 import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
 
 /**
  * The main class that runs the Inversion of Control (IoC) container application.
@@ -13,7 +18,7 @@ public class Main {
      * @param args Command line arguments (not used).
      */
     public static void main(String[] args) {
-        IOCContainer container = new IOCContainer(); // IOCContainer is no longer an inner class
+        IOCContainer container = new IOCContainer();
         Scanner scanner = new Scanner(System.in);
         int choice = 0;
 
@@ -49,7 +54,7 @@ public class Main {
                 default:
                     System.out.println("Invalid choice. Please try again.");
             }
-            System.out.println(); // Add a blank line for readability
+            System.out.println();
         } while (choice != 8);
 
         scanner.close();
@@ -83,7 +88,7 @@ public class Main {
         System.out.print("Enter Choice: ");
         while (!scanner.hasNextInt()) {
             System.out.println("Invalid input. Please enter a number.");
-            scanner.next(); // consume the non-integer input
+            scanner.next();
             System.out.print("Enter Choice: ");
         }
         return scanner.nextInt();
@@ -149,7 +154,6 @@ public class Main {
                 if ((line = reader.readLine()) != null) {
                     try {
                         double itemPrice = Double.parseDouble(line);
-                        // Item is now a top-level class, so no 'this' needed.
                         Item item = new Item(itemName, itemPrice);
                         cart.add(item);
                     } catch (NumberFormatException e) {
@@ -181,7 +185,7 @@ public class Main {
         System.out.print("Enter Item Price: ");
         while (!scanner.hasNextDouble()) {
             System.out.println("Invalid input. Please enter a valid price.");
-            scanner.next(); // consume the non-double input
+            scanner.next();
             System.out.print("Enter Item Price: ");
         }
         double itemPrice = scanner.nextDouble();
@@ -193,7 +197,6 @@ public class Main {
         }
 
         ShoppingCart cart = (ShoppingCart) bean;
-        // Item is now a top-level class, so no 'this' needed.
         Item item = new Item(itemName, itemPrice);
         cart.add(item);
         System.out.println("Item '" + itemName + "' added to shopping cart '" + shoppingCartId + "'.");

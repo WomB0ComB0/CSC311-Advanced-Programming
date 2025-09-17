@@ -1,5 +1,8 @@
+package com.example.hw;
+
 import java.util.HashMap;
 import java.util.Map;
+import com.example.hw.Bean;
 
 /**
  * A container that manages and provides instances of Beans.

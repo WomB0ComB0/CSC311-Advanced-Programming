@@ -1,3 +1,5 @@
+package com.example.hw;
+
 /**
  * Represents a customer with a name and address.
  * Implements the Bean interface.

@@ -1,3 +1,5 @@
+package com.example.hw;
+
 /**
  * Represents a generic bean managed by the IOCContainer.
  * All managed objects should implement this interface.
