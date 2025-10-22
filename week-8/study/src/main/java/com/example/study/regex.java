@@ -1,4 +1,3 @@
-
 public class Regex {
   public static void main(String[] args) {
     System.out.println("--- Core Concepts & Character Classes ---");
@@ -38,5 +37,4 @@ public class Regex {
     System.out.println("Original date: " + date);
     System.out.println("Reformatted date: " + reformattedDate);
   }
-}
-;
+};
