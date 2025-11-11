@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <title>Index</title>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th,
+    td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 th:text="'Product List'">Product List</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Stock Status</th>
+        <th>Rating</th>
+        <th>Description</th>
+        <th>Customer Review</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr th:each="prod : ${products}">
+
+        <td>
+          <a th:href="@{/productdetail(id=${prod.id})}" th:text="${prod.id}">
+            P001
+          </a>
+        </td>
+
+        <td th:text="${prod.name}">Product Name</td>
+        <td th:text="${prod.price}">0.00</td>
+        <td th:text="${prod.stockStatus}">Stock Status</td>
+        <td th:text="${prod.rating}">0.0</td>
+        <td th:text="${prod.description}">Description</td>
+        <td th:text="${prod.customerReview}">Review</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+
+</html>

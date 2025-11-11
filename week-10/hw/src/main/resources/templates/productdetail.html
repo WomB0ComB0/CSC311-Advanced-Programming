@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <title>Product Detail</title>
+</head>
+
+<body>
+  <h1>Product Detail</h1>
+
+  <div th:if="${product}">
+    <p>
+      <strong>Id = </strong>
+      <span th:text="${product.id}">P002</span>
+    </p>
+    <p>
+      <strong>Name = </strong>
+      <span th:text="${product.name}">Aurora Gaming Mouse</span>
+    </p>
+    <p>
+      <strong>Price = </strong>
+      <span th:text="${product.price}">79.5</span>
+    </p>
+    <p>
+      <strong>Stock Status = </strong>
+      <span th:text="${product.stockStatus}">Out of Stock</span>
+    </p>
+    <p>
+      <strong>Rating = </strong>
+      <span th:text="${product.rating}">1.8</span>
+    </p>
+    <p>
+      <strong>Description = </strong>
+      <span th:text="${product.description}">RGB programmable buttons</span>
+    </p>
+    <p>
+      <strong>Customer Review = </strong>
+      <span th:text="${product.customerReview}">Underwhelming :(</span>
+    </p>
+  </div>
+
+  <div th:if="${product == null}">
+    <p>Product not found.</p>
+  </div>
+
+  <br />
+  <a href="/">Back to List</a>
+</body>
+
+</html>
