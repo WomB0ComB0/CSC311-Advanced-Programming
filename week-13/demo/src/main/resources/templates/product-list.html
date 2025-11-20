@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <title>Products</title>
+    <style>
+        table { width: 100%; border-collapse: collapse; }
+        th, td { border: 1px solid black; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+    </style>
+</head>
+<body>
+    <h1>Product List</h1>
+    
+    <a href="/products/add">Add Product</a>
+    <br/><br/>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Stock Status</th>
+                <th>Rating</th>
+                <th>Description</th>
+                <th>Customer Review</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="product : ${products}">
+                <td>
+                    <a th:href=" @{/products/edit/{id}(id=${product.id})}" th:text="${product.id}">1</a>
+                </td>
+                <td th:text="${product.name}">Name</td>
+                <td th:text="${#numbers.formatDecimal(product.price, 1, 2)}">0.00</td>
+                <td th:text="${product.stockStatus}">Status</td>
+                <td th:text="${product.rating}">0.0</td>
+                <td th:text="${product.description}">Desc</td>
+                <td th:text="${product.customerReview}">Review</td>
+                <td>
+                    <a th:href=" @{/products/delete/{id}(id=${product.id})}" 
+                       onclick="return confirm('Are you sure you want to delete this product?')">Delete</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

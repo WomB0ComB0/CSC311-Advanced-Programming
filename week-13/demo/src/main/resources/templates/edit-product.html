@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <title>Edit Product</title>
+</head>
+<body>
+    <h1>Edit Product</h1>
+    
+    <form action="#" th:action=" @{/products/edit/{id}(id=${product.id})}" th:object="${product}" method="post">
+        
+        <label title="id">Id:</label>
+        <input title="id" type="text" th:field="*{id}" readonly="readonly" /><br/><br/>
+        
+        <label title="name">Name:</label>
+        <input title="name" type="text" th:field="*{name}" required /><br/><br/>
+        
+        <label title="price">Price:</label>
+        <input title="price" type="number" step="0.01" th:field="*{price}" required /><br/><br/>
+        
+        <label title="stockStatus">Stock Status:</label>
+        <input title="stockStatus" type="text" th:field="*{stockStatus}" required /><br/><br/>
+        
+        <label title="rating">Rating:</label>
+        <input title="rating" type="number" step="0.1" th:field="*{rating}" required /><br/><br/>
+        
+        <label title="description">Description:</label>
+        <input title="description" type="text" th:field="*{description}" /><br/><br/>
+        
+        <label title="customerReview">Customer Review:</label>
+        <input title="customerReview" type="text" th:field="*{customerReview}" /><br/><br/>
+        
+        <button type="submit">Save</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,15 @@
+INSERT INTO products (name, price, stock_status, rating, description, customer_review) VALUES ('Starlite Backpack', 49.99, 'In Stock', 4.6, 'Stylish durable weather-resistant', 'Perfect for weekend getaways.');
+INSERT INTO products (name, price, stock_status, rating, description, customer_review) VALUES ('Aurora Gaming Mouse', 79.50, 'Out of Stock', 1.8, 'RGB programmable buttons', 'Underwhelming :(');
+INSERT INTO products (name, price, stock_status, rating, description, customer_review) VALUES ('Cosmic Yoga Mat', 24.25, 'In Stock', 4.2, 'Non-slip eco-friendly', 'No weird smell great cushion!');
+INSERT INTO products (name, price, stock_status, rating, description, customer_review) VALUES ('Lunar Coffee Maker', 129.99, 'Backordered', 4.7, 'Programmable matte finish', 'Brewed bliss in every cup!');
+INSERT INTO products (name, price, stock_status, rating, description, customer_review) VALUES ('Orchid Face Serum', 38.00, 'In Stock', 4.4, 'Botanical blend skin brightening', 'Miracle bottle truly glowing!');
+INSERT INTO products (name, price, stock_status, rating, description, customer_review) VALUES ('Vortex Blender', 89.95, 'In Stock', 0.5, 'Smoothies in seconds', 'Loud but blends everything!');
+INSERT INTO products (name, price, stock_status, rating, description, customer_review) VALUES ('Pixel Noise-Canceling Headphones', 199.00, 'Out of Stock', 4.9, 'Immersive sound plush fit', 'Feels like a private concert!');
+INSERT INTO products (name, price, stock_status, rating, description, customer_review) VALUES ('GlowHydro Flask', 34.20, 'In Stock', 10.0, 'Glow-in-the-dark insulation', 'Not very good');
+INSERT INTO products (name, price, stock_status, rating, description, customer_review) VALUES ('Quantum Electric Scooter', 349.99, 'Pre-order', 4.6, 'Foldable long battery life', 'Futuristic ride head turner!');
+INSERT INTO products (name, price, stock_status, rating, description, customer_review) VALUES ('EcoSmart LED Bulb', 6.99, 'In Stock', 5.0, 'Energy-saving 10-year life', 'Swapped all bulbs-perfect light!');
+INSERT INTO products (name, price, stock_status, rating, description, customer_review) VALUES ('ZenTune White Noise Machine', 32.50, 'In Stock', 4.4, '12 sounds compact', 'Tranquility in a box-sleep goals!');
+INSERT INTO products (name, price, stock_status, rating, description, customer_review) VALUES ('Titanium Grill Set', 54.00, 'In Stock', 4.6, 'Rust-resistant ergonomic', 'BBQ beast mode activated!');
+INSERT INTO products (name, price, stock_status, rating, description, customer_review) VALUES ('Retro Vinyl Player', 84.75, 'Out of Stock', 4.7, 'Bluetooth vintage charm', 'Vinyl vibes all the way!');
+INSERT INTO products (name, price, stock_status, rating, description, customer_review) VALUES ('Velvet Throw Blanket', 29.50, 'In Stock', 46.0, 'Ultra-soft washable', 'Snuggle heaven. Best purchase!');
+INSERT INTO products (name, price, stock_status, rating, description, customer_review) VALUES ('Bamboo Chef Board', 19.99, 'In Stock', 13.5, 'Sustainable scratch-proof', 'Elegant and solid-thumbs up!');
