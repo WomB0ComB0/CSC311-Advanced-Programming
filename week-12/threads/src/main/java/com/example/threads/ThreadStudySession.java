@@ -6,18 +6,22 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 
 /**
- * COMPREHENSIVE THREAD STUDY GUIDE Based on your lecture slides.
+ * COMPREHENSIVE THREAD STUDY GUIDE
+ * Based on your lecture slides.
  *
- * <p>CONCEPTS: 1. Runnable: Write a class that implements the Runnable interface. Best practice
- * (decouples task from runner). 2. Extend Thread: Write a class that inherits the Thread class.
- * Less flexible (Java only allows single inheritance). 3. Anonymous Runnable: Defining the task
- * inline using an anonymous inner class. 4. Lambda Runnable: Using Java 8+ Lambda syntax `() -> {}`
- * for concise code. 5. Passing Data: Using constructors to pass data into a thread, or using
- * "effectively final" local variables. 6. Join: Waiting for a thread to complete before proceeding.
- * 7. Sleep: Pausing execution (requires handling InterruptedException). 8. Synchronization:
- * Preventing race conditions using synchronized methods or blocks. 9. Executors: High-level thread
- * management (Thread Pools). 10. CountDownLatch: Waiting for multiple threads to finish.
+ * CONCEPTS:
+ * 1. Runnable: Write a class that implements the Runnable interface. Best practice (decouples task from runner).
+ * 2. Extend Thread: Write a class that inherits the Thread class. Less flexible (Java only allows single inheritance).
+ * 3. Anonymous Runnable: Defining the task inline using an anonymous inner class.
+ * 4. Lambda Runnable: Using Java 8+ Lambda syntax `() -> {}` for concise code.
+ * 5. Passing Data: Using constructors to pass data into a thread, or using "effectively final" local variables.
+ * 6. Join: Waiting for a thread to complete before proceeding.
+ * 7. Sleep: Pausing execution (requires handling InterruptedException).
+ * 8. Synchronization: Preventing race conditions using synchronized methods or blocks.
+ * 9. Executors: High-level thread management (Thread Pools).
+ * 10. CountDownLatch: Waiting for multiple threads to finish.
  */
+
 public class ThreadStudySession {
 
   public static void main(String[] args) {
