@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rest API Client - POST</title>
+</head>
+<body>
+    <h1>Add New Employee (POST)</h1>
+    
+    <!-- 
+      The action attribute points to your API.
+      method="post" ensures it sends a POST request.
+      If connecting to another student, replace localhost with their IP.
+    -->
+    <form action="http://localhost:8080/api/employees" method="post">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <br>
+        <div>
+            <label for="salary">Salary:</label>
+            <input type="number" id="salary" name="salary" required>
+        </div>
+        <br>
+        <button type="submit">Add Employee</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rest API Client - GET</title>
+</head>
+<body>
+    <h1>Employee List (GET)</h1>
+    <pre id="out"></pre>
+
+    <script>
+        // Use localhost to test your own, or an IP address to test a classmate's
+        // Example: fetch("http://192.168.1.5:8080/api/employees")
+        fetch("http://localhost:8080/api/employees")
+            .then(r => r.json())
+            .then(j => document.getElementById("out").textContent = JSON.stringify(j, null, 2))
+            .catch(err => console.error("Error:", err));
+    </script>
+</body>
+</html>
